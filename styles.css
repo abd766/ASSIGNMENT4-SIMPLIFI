@@ -1,0 +1,883 @@
+/* DEFAULT CSS FOR ALL SCREEN SIZES */
+/* Background styles */
+body {
+  background: #000428;  
+  background: -webkit-linear-gradient(45deg, #000428, #004e92, #000428);
+  /* background-repeat: no-repeat; */
+
+     animation: gradient 15s ease infinite;
+  }
+  
+  /* Form styles */
+  form {
+    width: 80%;
+    max-width: 110px;
+    margin: 50px auto;
+    padding: 30px;
+    
+    /* background-color: #ffffff; */
+    background-image: linear-gradient(-45deg, #0d0d0d 10%, #5f09ba 70%,rgb(2, 2, 8) 100%);
+    border-radius: 20px;
+    /* border-style: double; */
+    border-color:rgb(53, 50, 50);
+    border: 8px solid rgb(53, 50, 50);
+    box-shadow: 10px 10px 20px rgba(240, 237, 237, 0.2);
+  }
+  fieldset{
+    border:4px solid rgb(67, 7, 188);
+    border-radius: 8px;
+  }
+  
+  form h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f9f8f8;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f8f6f6;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  form .radio-group {
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    
+    background: linear-gradient(to right, #ff6a00, #ee0979, #9b4dff);
+    color: white;
+    width:40%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .submit-button:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #ff6a00, #ee0979, #9b4dff);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+  }
+  
+  .submit-button:hover:before {
+    opacity: 0.5;
+  }
+  
+  .submit-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background: linear-gradient(to right, #ff6a00, #ee0979, #9b4dff);
+    animation: pulse 1.5s infinite;
+    z-index: -1;
+    opacity: 0.5;
+    
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.2;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .submit-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .submit-button:focus {
+    outline: none;
+  }
+  
+  .submit-button:hover:after {
+    animation: pulse 1s infinite;
+  }
+  
+  .submit-button:focus:before {
+    opacity: 0.5;
+  }
+  
+  .submit-button:focus:after {
+    opacity: 0.7;
+  }
+  
+  
+  /* Hover effects */
+  form input[type="text"]:hover,
+  form input[type="number"]:hover,
+  form input[type="radio"]:hover,
+  form input[type="tel"]:hover,
+  form button[type="submit"]:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Gradient animation */
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Border effects */
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="tel"],
+  form input[type="radio"] {
+    border: none;
+    border-bottom: 2px solid #0080ff;
+    transition: all 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="number"]:focus,
+  form input[type="tel"]:focus,
+  form input[type="radio"]:focus {
+    border-bottom: 2px solid #004080;
+  }
+  
+  /* Colorful radio buttons */
+  form input[type="radio"] + label {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 5px;
+  }
+  
+  form input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  /* Add hover effect to submit button */
+#submit:hover {
+    background-color: #43a047;
+  }
+  
+ 
+  
+  /* Add border effects to form */
+  form {
+    border: 6px solid #3e3e3e;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(245, 243, 243, 0.2);
+  }
+  
+  /* Add hover effect to form fields */
+  form input[type="text"]:hover,input[type="tel"]:hover, form input[type="number"]:hover, form input[type="radio"]:hover {
+    border-color: #a7c61b;
+  }
+  
+  /* Add hover effect to form labels */
+  form label:hover {
+    color: #b5b49c;
+    cursor: pointer;
+  }
+  
+  /* Add animation to form fields */
+  form input[type="text"],input[type="tel"], form input[type="number"], form input[type="radio"], form label {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Add animation to submit button */
+  #submit {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add custom error message for required fields */
+  input:required:invalid, select:required:invalid {
+    border-color: red;
+  }
+  
+  input:required:invalid:focus, select:required:invalid:focus {
+    outline: none;
+  }
+  
+  input:required:invalid + label, select:required:invalid + label {
+    color: red;
+  }
+  
+  /* Add custom style for radio buttons */
+  form input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: 3px solid #aaa;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  form input[type="radio"]:checked:before {
+    content: '\2022';
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #43a047;
+  }
+  
+  /* Add animation to radio buttons */
+  form input[type="radio"] {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form input[type="radio"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  form input[type="radio"]:focus {
+    outline: none;
+  }
+  
+  /* Add custom style to form field labels */
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Add custom style to form field inputs */
+  input[type="text"], input[type="number"],input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus,input[type="tel"]:focus {
+    border-color: #43a047;
+    outline: none;
+  }
+  
+  /* Add custom style to submit button */
+  #submit {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #131313;
+    box-shadow: 5px 5px 10px #ae9c9c;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    border: 10px solid rgb(11, 11, 12);
+    border-radius: 50%;
+    background-color: rgba(72, 112, 35, 0.2);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+  
+  .button:hover:before {
+    opacity: 1;
+  }
+  
+  .button:hover {
+    background: -webkit-linear-gradient(45deg, #000428, #004e92, #000428);
+
+    /* background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ); */
+    box-shadow: 0px 0px 20px #d3d61d;
+   color: rgb(248, 248, 248);
+  }
+
+
+
+
+
+
+
+
+/* STYLE FOR LAPTOP SCREEN SIZE */
+@media screen and (min-width:1024px)
+ {
+  /* Background styles */
+body {
+  background: #000428;  
+  background: -webkit-linear-gradient(45deg, #000428, #004e92, #000428);
+  background-repeat: no-repeat;
+
+     animation: gradient 15s ease infinite;
+  }
+  
+  /* Form styles */
+  form {
+    width: 100%;
+    max-width: 1100px;
+    max-height: fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    
+    /* background-color: #ffffff; */
+    background-image: linear-gradient(-45deg, #0d0d0d 10%, #5f09ba 70%,rgb(2, 2, 8) 100%);
+    border-radius: 20px;
+    /* border-style: double; */
+    border-color:rgb(53, 50, 50);
+    border: 8px solid rgb(53, 50, 50);
+    box-shadow: 10px 10px 20px rgba(240, 237, 237, 0.2);
+  }
+  fieldset{
+    border:4px solid rgb(67, 7, 188);
+    border-radius: 8px;
+  }
+  
+  form h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f9f8f8;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f8f6f6;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  form .radio-group {
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    
+    background: linear-gradient(to right, #ff6a00, #ee0979, #9b4dff);
+    color: white;
+    width:45%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  
+  /* Add custom style to form field labels */
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Add custom style to form field inputs */
+  input[type="text"], input[type="number"],input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus,input[type="tel"]:focus {
+    border-color: #43a047;
+    outline: none;
+  }
+  
+  /* Add custom style to submit button */
+  #submit {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+ 
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #131313;
+    box-shadow: 5px 5px 10px #ae9c9c;
+    position: relative;
+    overflow: hidden;
+  }  
+}
+
+
+
+
+/* STYLE FOR TABLET SCREEN SIZE */
+@media screen and (min-width:768px) and (max-width:1023px)
+ {
+  /* Background styles */
+body {
+  background: #000428;  
+  background: -webkit-linear-gradient(45deg, #000428, #004e92, #000428);
+  background-repeat: no-repeat;
+
+     animation: gradient 15s ease infinite;
+  }
+  
+  /* Form styles */
+  form {
+    width: 100%;
+    max-width: 760px;
+    max-height:fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    
+    /* background-color: #ffffff; */
+    background-image: linear-gradient(-45deg, #0d0d0d 10%, #5f09ba 70%,rgb(2, 2, 8) 100%);
+    border-radius: 20px;
+    /* border-style: double; */
+    border-color:rgb(53, 50, 50);
+    border: 8px solid rgb(53, 50, 50);
+    box-shadow: 10px 10px 20px rgba(240, 237, 237, 0.2);
+  }
+  fieldset{
+    border:4px solid rgb(67, 7, 188);
+    border-radius: 8px;
+  }
+  
+  form h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f9f8f8;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f8f6f6;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  form .radio-group {
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    
+    background: linear-gradient(to right, #ff6a00, #ee0979, #9b4dff);
+    color: white;
+    width:45%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  
+  /* Add custom style to form field labels */
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Add custom style to form field inputs */
+  input[type="text"], input[type="number"],input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus,input[type="tel"]:focus {
+    border-color: #43a047;
+    outline: none;
+  }
+  
+  /* Add custom style to submit button */
+  #submit {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+ 
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #131313;
+    box-shadow: 5px 5px 10px #ae9c9c;
+    position: relative;
+    overflow: hidden;
+  } 
+}
+ 
+  
+
+/* STYLE FOR PHONE SCREEN SIZE */
+@media screen and (max-width:767px)
+ {
+  /* Background styles */
+body {
+  background: #000428;  
+  background: -webkit-linear-gradient(45deg, #000428, #004e92, #000428);
+  background-repeat: no-repeat;
+
+     animation: gradient 15s ease infinite;
+  }
+  
+  /* Form styles */
+  form {
+    width: 100%;
+    max-width: 425px;;
+    max-height:fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    
+    /* background-color: #ffffff; */
+    background-image: linear-gradient(-45deg, #0d0d0d 10%, #5f09ba 70%,rgb(2, 2, 8) 100%);
+    border-radius: 20px;
+    /* border-style: double; */
+    border-color:rgb(53, 50, 50);
+    border: 8px solid rgb(53, 50, 50);
+    box-shadow: 10px 10px 20px rgba(240, 237, 237, 0.2);
+  }
+  fieldset{
+    border:4px solid rgb(67, 7, 188);
+    border-radius: 8px;
+  }
+  
+  form h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f9f8f8;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f8f6f6;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  form .radio-group {
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    
+    background: linear-gradient(to right, #ff6a00, #ee0979, #9b4dff);
+    color: white;
+    width:45%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  
+  /* Add custom style to form field labels */
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Add custom style to form field inputs */
+  input[type="text"], input[type="number"],input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus,input[type="tel"]:focus {
+    border-color: #43a047;
+    outline: none;
+  }
+  
+  /* Add custom style to submit button */
+  #submit {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+ 
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #131313;
+    box-shadow: 5px 5px 10px #ae9c9c;
+    position: relative;
+    overflow: hidden;
+  } 
+}
+ 
+  

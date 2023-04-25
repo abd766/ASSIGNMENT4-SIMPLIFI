@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="survey-form" action="https://enw7u145b8im9.x.pipedream.net/" method="POST">
+            <center><h1><button class="button">SURVEY FORM</button></h1></center><br>
+            <div class="form-group">
+                <label for="first_name" >First Name *</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter your First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name *</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter your Last Name"  required>
+            </div>
+            <div class="form-group">
+                <label for="street_address">Street *</label>
+                <input type="text" id="street_address" name="street_address" placeholder="Enter your Street's Name"  required>
+            </div>
+            <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city"  placeholder="Enter your City's Name" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State *</label>
+                <input type="text" id="state" name="state"  placeholder="Enter your State's Name" required>
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pin Code *</label>
+                <input type="text" id="pincode" name="pincode"  placeholder="Enter your PINCODE" required>
+            </div>
+            <div class="form-group">
+                <label for="contact_number">Contact Number *</label>
+                <input type="number" id="contact_number" name="contact_number"  placeholder="Enter your Contact Number" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend><h2><b>Rate the following:-</b></h2></legend>
+                    <div class="rating">
+                        <label for="quality_of_products_recieved_rating">Quality of products received *</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="quality_of_products_recieved_rating" value="Excellent" required>Excellent</label>
+                            <label><input type="radio" name="quality_of_products_recieved_rating" value="Good">Good</label>
+                            <label><input type="radio" name="quality_of_products_recieved_rating" value="Bad">Bad</label>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <label for="value_for_money_rating">Value for money *</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="value_for_money_rating" value="Excellent" required>Excellent</label>
+                            <label><input type="radio" name="value_for_money_rating" value="Good">Good</label>
+                            <label><input type="radio" name="value_for_money_rating" value="Bad">Bad</label>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <label for="delivery_rating">Delivery *</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="delivery_rating" value="Excellent" required>Excellent</label>
+                            <label><input type="radio" name="delivery_rating" value="Good">Good</label>
+                            <label><input type="radio" name="delivery_rating" value="Bad">Bad</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+            <div class="form-group">
+                <center><button class="submit-button">Submit</button></center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
